@@ -6,10 +6,13 @@ import org.springframework.data.domain.Pageable;
 
 import java.util.Optional;
 
+
 public interface UserService {
 
     /**
      * 新增、编辑、保存用户
+     * @param user
+     * @return
      */
     User saveOrUpdateUser(User user);
 
@@ -31,11 +34,12 @@ public interface UserService {
      * @param id
      * @return
      */
-    Optional<User> getById(Long id);
+    Optional<User> getUserById(Long id);
 
     /**
-     * 根据用户名进行模糊分页查找
+     * 根据用户名进行分页模糊查询
      * @param name
+     * @param pageable
      * @return
      */
     Page<User> listUsersByNameLike(String name, Pageable pageable);
