@@ -62,4 +62,17 @@ public class MainController {
         System.out.println("user.getName():"+user.getName());
         return "redirect:/login";
     }
+
+    /**
+     * 登录功能
+     * @param user
+     * @return
+     */
+    @PostMapping("/login")
+    public String loginUser(User user) {
+        System.out.println("我啥都不干，我就是看看");
+        System.out.println("login的用户名user.getName():"+user.getName());
+        System.out.println("login的用户名user.getUsername():"+user.getUsername());
+        return "redirect:/index";
+    }
 }
