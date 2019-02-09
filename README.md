@@ -26,6 +26,7 @@ desc table_name;
     }
     
 注意1：@service是加在子类上
+
 注意2：在controller中，@Autowired的是父接口
 
 
