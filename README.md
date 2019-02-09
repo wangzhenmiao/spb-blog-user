@@ -1,4 +1,36 @@
 # spb-blog-user
+
+一、查看mysql数据表的表结构
+
+desc table_name;
+
+二、service注解
+
+1、父service接口
+
+    public interface UserService {...}
+
+2、Impl实现接口，要添加@service注解
+
+    @Service
+    public class UserServiceImpl implements UserService {...}
+
+3、在controller中的引用，还是父接口
+
+    @Controller
+    public class MainController {
+
+    @Autowired
+    private UserService userService;
+    ...
+    }
+    
+注意1：@service是加在子类上
+注意2：在controller中，@Autowired的是父接口
+
+
+===2019029===
+
 一、Bean Validation
 
 注解 @NotEmpty,@Email都是hibernate提供的注解
