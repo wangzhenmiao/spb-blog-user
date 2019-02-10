@@ -29,10 +29,26 @@ desc table_name;
 
 注意2：在controller中，@Autowired的是父接口
 
+三、javax.validation.ConstraintViolationException
+
+在与Hibernate对应的实体类中有如下注解，
+
+      @NotEmpty(message = "姓名不能为空")
+      @Size(min=2, max=20)
+      
+constraints：限制
+
+persist：坚持
+
+Validation：验证
+
+四、
+
 三、form表单提交是，id和name属性的区别。
 
 四、页面什么参数都没有的请求，一般是get;form表单中写了post的，是post请求，对应controller中的post。
 
+五
 
 ===2019029===
 
