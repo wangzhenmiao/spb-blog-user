@@ -42,13 +42,11 @@ persist：坚持
 
 Validation：验证
 
-四、
+四、form表单提交是，id和name属性的区别。
 
-三、form表单提交是，id和name属性的区别。
+五、页面什么参数都没有的请求，一般是get;form表单中写了post的，是post请求，对应controller中的post。
 
-四、页面什么参数都没有的请求，一般是get;form表单中写了post的，是post请求，对应controller中的post。
 
-五
 
 ===2019029===
 
