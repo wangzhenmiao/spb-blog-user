@@ -29,6 +29,10 @@ desc table_name;
 
 注意2：在controller中，@Autowired的是父接口
 
+三、form表单提交是，id和name属性的区别。
+
+四、页面什么参数都没有的请求，一般是get;form表单中写了post的，是post请求，对应controller中的post。
+
 
 ===2019029===
 
